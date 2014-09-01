@@ -1,0 +1,56 @@
+<!-- Paga title -->
+    <div class="main-header">
+      <div class="container">
+        <!-- <div class="row">
+          <div class="col-sm-8 col-lg-8">
+            <h1>Knowledge Base</h1>
+            <p class="tagline">Find answers and help fast</p>
+          </div>
+          <div class="col-sm-4 col-lg-4">
+            <form role="search" method="get" id="searchform" class="form-search" action="#">
+              <div class="append-icon">
+                <input type="text" value="" name="s" id="autocomplete-dynamic" class="form-control input-lg" autocomplete="off" placeholder="Enter search term here.">
+                <span><i class="icon-search"></i></span>
+              </div>
+            </form>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+
+    <div class="wrap container" role="document">
+      <div class="content row">
+        <div class="main col-sm-9" role="main">
+          <div class="page-header">
+            <h1>Iniciar Sesión</h1>
+          </div>
+          <div class="page-main">
+            
+            <p>&nbsp;</p>
+
+              <div id="messageDiv"></div>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="form-group"><%= f.label :email %><br />
+  <%= f.email_field :email, autofocus: true %></div>
+
+  <div class="form-group"><%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "off" %></div>
+
+  <% if devise_mapping.rememberable? -%>
+    <div class="form-group"><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+  <% end -%>
+
+  <div class="form-group"><%= f.submit "Sign in", class: 'btn btn-primary' %></div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+
+  </div>
+        </div>
+
+     
+      </div>
+    </div><!-- /.content -->
+
