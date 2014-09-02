@@ -32,6 +32,17 @@ jQuery(document).ready(function ($) {
 
 }); /* end of as page load scripts */
 
+jQuery(document).ready(function ($) {
+  "use strict";
+
+  // responsive videos with fitvids
+  $('.fitvids').fitVids();
+  $(".hero-image2").backstretch("/assets/how_to_work.png");
+  $('.trigger-tooltio').tooltip()
+
+
+}); 
+
   
 /***************************************************
       Autocomplete Search

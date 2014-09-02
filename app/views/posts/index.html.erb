@@ -10,6 +10,16 @@
 
         <div class="row">
           <div class="hero-box col-sm-8 col-sm-offset-2">
+            <%= form_for(:question, role: "search", html: {class: "form-search", id:"searchform"}) do |f| %>
+              <div class="input-group">
+                <%= f.text_field :content, class: "form-control input-lg", id: "autocomplete-dynamic", placeholder: "Encuentra ayuda! Escribe tu pregunta aquí." %>
+                <span class="input-group-btn">
+                  <%= f.submit "preguntar", :class => "btn"  %>
+<!--                   <%= link_to 'Preguntar',new_user_registration_path, class: 'btn' %>
+ -->                </span>
+              </div>
+            <% end %>
+
             <form role="search" method="get" id="searchform" class="form-search" action="#">
               <div class="input-group">
                 <input type="text" id="autocomplete-dynamic" name="s" id="s" class="form-control input-lg" autocomplete="off" placeholder="Encuentra ayuda! Escribe tu pregunta aquí.">
