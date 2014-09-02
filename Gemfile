@@ -15,6 +15,8 @@ group :production do
   gem 'rails_12factor','0.0.2'
 end
 
+gem 'bootstrap-switch-rails', '~> 3.0.2'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 

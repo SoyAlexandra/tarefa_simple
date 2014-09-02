@@ -5,6 +5,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
+    @question = Question.new
     @posts = Post.all
   end
 
