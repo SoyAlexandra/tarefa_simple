@@ -27,7 +27,9 @@
         <div class="navbar-header">
 
           <div class="navbar-brand">
-            <a title="tarefasimple" href="/"><img src="/assets/logo.png" alt="logo tarefasimple"/></a>
+            <a title="tarefasimple" href="/">
+              <%= image_tag "logo.png" %>
+            </a>
           </div>
           
           <button data-target=".nav-responsive" data-toggle="collapse" type="button" class="navbar-toggle">
@@ -42,9 +44,7 @@
           <ul id="menu-main" class="nav navbar-nav">
 <li class="active dropdown">
               <a class="dropdown-toggle" data-target="#" href="/">Home</a>
-            <!--   <ul class="dropdown-menu">
-                <li><a href="index2.html">Home 2</a></li>
-              </ul> -->
+              
             </li>
 
             <li>
@@ -53,8 +53,16 @@
 
             <li class= "divider"></li>
             <% if user_signed_in? %>
-            <li>
-              <%= link_to current_user.name , edit_user_registration_path %>
+            <li class="dropdown">
+
+              <%= link_to current_user.name , edit_user_registration_path, html: {class: "dropdown-toggle", id:"searchform"} %>
+         
+              <ul class="dropdown-menu">
+                <li><%= link_to 'Editar Perfil', edit_user_registration_path %>
+         </li>
+                <li><%= link_to 'Listar Preguntas', questions_path %></li>
+              </ul>
+                
             </li>
             <li>
               <%= link_to 'Log Out', destroy_user_session_path, method: :delete %>
@@ -94,7 +102,7 @@
         <div class="visible-xs">
           <nav class="nav-responsive collapse" role="navigation">
             <ul class="nav">
-<li class="active dropdown">
+  <li class="active dropdown">
               <a class="dropdown-toggle" data-target="#" href="/">Home</a>
             <!--   <ul class="dropdown-menu">
                 <li><a href="index2.html">Home 2</a></li>
@@ -287,19 +295,21 @@
             <div class="col-lg-12">
               <ul class="social-icons">
                 <li class="btn-social btn-twitter">
-                  <a target="blank" href="http://twitter.com/tarefasimple"><img src="/assets/icons_twitter.png" alt="Twitter" />
+                  <a target="blank" href="http://twitter.com/tarefasimple">
+                     <%= image_tag "icons_twitter.png" %>
                   </a>
                 </li>
                 <li class="btn-social btn-facebook">
-                  <a target="blank" href="http://facebook.com/tarefasimple"><img src="/assets/icons_facebook.png" alt="Facebook" />
+                  <a target="blank" href="http://facebook.com/tarefasimple"> <%= image_tag "icons_facebook.png" %>
                   </a>
                 </li>
                 <li class="btn-social btn-google">
-                  <a target="blank" href="http://gplus.to/tarefasimple"><img src="/assets/icons_google.png" alt="Google+" />
+                  <a target="blank" href="http://gplus.to/tarefasimple">
+                    <%= image_tag "icons_google.png" %>
                   </a>
                 </li>
                 <li class="btn-social btn-linkedin">
-                  <a target="blank" href="http://linkedin.com/in/tarefasimple"><img src="/assets/icons_linkedin.png" alt="LinkedIn" />
+                  <a target="blank" href="http://linkedin.com/in/tarefasimple"><%= image_tag "icons_linkedin.png" %>
                   </a>
                 </li>
            <!--      <li class="btn-social btn-vimeo">
@@ -307,7 +317,7 @@
                   </a>
                 </li> -->
                 <li class="btn-social btn-youtube">
-                  <a target="blank" href="http://youtube.com/tarefasimple"><img src="/assets/icons_youtube.png" alt="YouTube" />
+                  <a target="blank" href="http://youtube.com/tarefasimple"><%= image_tag "icons_youtube.png" %>
                   </a>
                 </li>
                 <!-- <li class="btn-social btn-flickr">
@@ -323,7 +333,7 @@
                   </a>
                 </li> -->
               </ul>
-              <p class="copyright">Copyright 2014. Powered by <a href='#'>Tarefa simple</a></p>       
+              <p class="copyright">Copyright 2014. Powered by <a >Tarefa simple</a></p>       
             </div>
           </div>
         </div>
