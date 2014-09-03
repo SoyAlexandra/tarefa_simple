@@ -20,16 +20,16 @@
       As the page loads, cal these scripts
 ***************************************************/
 
-jQuery(document).ready(function ($) {
-  "use strict";
+// jQuery(document).ready(function ($) {
+//   "use strict";
 
-  // responsive videos with fitvids
-  $('.fitvids').fitVids();
-  $(".hero-image").backstretch("/assets/hero_app.jpg");
-  $('.trigger-tooltio').tooltip()
+//   // responsive videos with fitvids
+//   $('.fitvids').fitVids();
+//   $(".hero-image").backstretch("/assets/hero_app.jpg");
+//   $('.trigger-tooltio').tooltip()
 
 
-}); /* end of as page load scripts */
+// }); /* end of as page load scripts */
 
 jQuery(document).ready(function ($) {
   "use strict";
