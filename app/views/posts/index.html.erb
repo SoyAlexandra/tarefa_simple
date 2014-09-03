@@ -15,7 +15,7 @@
                 <%= f.text_field :content, class: "form-control input-lg", id: "autocomplete-dynamic", placeholder: "Encuentra ayuda! Escribe tu pregunta aquí." %>
                 <span class="input-group-btn">
                   <% if current_user %>
-                    <%= f.submit "preguntar", :class => "btn" %>
+                    <%= f.submit "Preguntar", :class => "btn" %>
                   <% else %>
                     <%= link_to 'Preguntar',new_user_registration_path, class: 'btn' %>
                   <% end %>
@@ -39,7 +39,7 @@
             <div class="col-sm-4">
               <article class="box box-left">
                 <div class="circle">
-                  <a href="knowledgebase.html"><span></span><img src="/assets/respon.png"></img></a>
+                  <span></span><%= image_tag "respon.png" %>
                 </div>
                 <h3><a>Preguntas donde quieras</a></h3>
                 <p>Haz tus preguntas desde tu computador, smartphone o tablet. </p>
@@ -49,7 +49,7 @@
             <div class="col-sm-4">
               <article class="box box-middle">
                 <div class="circle">
-                  <a><span></span><img src="/assets/person.png"></img></a>
+                  <a><span></span><%= image_tag "person.png" %></a>
                 </div>
                 <h3><a>Profesionales</a></h3>
                 <p>Profesores verificados por tarefa contestáran tus preguntas, respuestas 100% confiables.</p>
@@ -59,7 +59,7 @@
             <div class="col-sm-4">
               <article class="box box-right">
                 <div class="circle">
-                  <a ><span></span><img src="/assets/star.png"></img></a>
+                  <a ><span></span><%= image_tag "star.png" %></a>
                 </div>
                 <h3><a >Confiable</a></h3>
                 <p>Encuentra todas las respuestas elaboradas por profesionales reales </p>

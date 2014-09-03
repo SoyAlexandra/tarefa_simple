@@ -32,7 +32,7 @@
 <table>
   <thead>
     <tr>
-      <th>Content</th>
+      <!-- <th>Preguntas</th> -->
      <!--  <th>Answer</th> -->
 <!--       <th>User</th>
  -->      <th></th>
@@ -49,10 +49,10 @@
         <!-- <td><%= question.user %></td> -->
 <!--         <td><%= link_to 'Show', question %></td>
  -->       
-       <!--  <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+        
       </tr>
  <tr>
-       <td><%= link_to 'Edit', edit_question_path(question) %></td>
+       <td><%= link_to 'Edit', edit_question_path(question) %> | <%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
 
         </tr>
     <% end %>
