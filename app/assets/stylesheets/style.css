@@ -187,7 +187,7 @@ pre {
 .banner .navbar-inner, .banner .navbar-inner .btn, .banner .navbar-inner label {
  font-size: 18px; 
 }.navbar-brand h1 a, .navbar-brand h1 a:hover {
-   color: #fff;
+   color: none;
    text-decoration: none;
 }
 .navbar-static-top {
@@ -260,7 +260,7 @@ pre {
 }
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus, .dropdown-menu>li>a:hover,
 .navbar-nav>.active>a, .navbar-nav>.active>a:hover, .navbar-nav>.active>a:focus, .navbar-nav>li>a:hover { 
- background: #282828; 
+ background: none; 
 }
 .navbar-nav .dropdown-menu {
  background-color: #000000;
