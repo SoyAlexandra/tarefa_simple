@@ -1,4 +1,9 @@
 Micropost::Application.routes.draw do
+
+  namespace :admin do
+    resources :questions
+  end
+  
   resources :questions
 
   get "static_pages/how_to_work"

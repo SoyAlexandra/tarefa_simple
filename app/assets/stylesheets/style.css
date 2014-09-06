@@ -145,13 +145,13 @@ blockquote p {
 pre {
    border-radius: 0;
 }
-.container .jumbotron {
+/*.container .jumbotron {
    border-radius: 0;
-}
-.jumbotron p {
+}*/
+/*.jumbotron p {
    line-height: 1.6;
    margin-bottom: 15px;
-}
+}*/
 .presentation h1 {
    font-size: 60px;
 }
@@ -557,6 +557,7 @@ border-top: 1px solid #e6e6e6;
    padding: 110px 0 190px;
    background-color: #3498db;
 }
+
 #hero h1 {
    text-align: center;
    margin: 0 0 26px;

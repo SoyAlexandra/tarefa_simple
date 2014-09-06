@@ -16,9 +16,9 @@
       <tr>
         <td><%= admin_question.content %></td>
         <td><%= admin_question.answer %></td>
-        <td><%= link_to 'Show', admin_question %></td>
+        <td><%= link_to 'Show', admin_question_path(admin_question) %></td>
         <td><%= link_to 'Edit', edit_admin_question_path(admin_question) %></td>
-        <td><%= link_to 'Destroy', admin_question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', admin_question_path(admin_question), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

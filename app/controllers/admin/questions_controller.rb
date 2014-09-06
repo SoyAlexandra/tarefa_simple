@@ -4,7 +4,7 @@ class Admin::QuestionsController < ApplicationController
   # GET /admin/questions
   # GET /admin/questions.json
   def index
-    @admin_questions = Admin::Question.all
+    @admin_questions = Question.all
   end
 
   # GET /admin/questions/1
@@ -14,7 +14,7 @@ class Admin::QuestionsController < ApplicationController
 
   # GET /admin/questions/new
   def new
-    @admin_question = Admin::Question.new
+    @admin_question = Question.new
   end
 
   # GET /admin/questions/1/edit
@@ -24,7 +24,7 @@ class Admin::QuestionsController < ApplicationController
   # POST /admin/questions
   # POST /admin/questions.json
   def create
-    @admin_question = Admin::Question.new(admin_question_params)
+    @admin_question = Question.new(admin_question_params)
 
     respond_to do |format|
       if @admin_question.save
@@ -64,7 +64,7 @@ class Admin::QuestionsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_admin_question
-      @admin_question = Admin::Question.find(params[:id])
+      @admin_question = Question.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

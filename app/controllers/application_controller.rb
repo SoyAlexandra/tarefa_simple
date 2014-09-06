@@ -15,4 +15,8 @@ class ApplicationController < ActionController::Base
     questions_path
   end
 
+  def validate_admin
+    #si el  user no  es admin ? redireccione a index
+  end
+
 end
