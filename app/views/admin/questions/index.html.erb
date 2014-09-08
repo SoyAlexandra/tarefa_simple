@@ -3,6 +3,7 @@
 <table>
   <thead>
     <tr>
+     
       <th>Content</th>
       <th>Answer</th>
       <th></th>
@@ -14,6 +15,7 @@
   <tbody>
     <% @admin_questions.each do |admin_question| %>
       <tr>
+
         <td><%= admin_question.content %></td>
         <td><%= admin_question.answer %></td>
         <td><%= link_to 'Show', admin_question_path(admin_question) %></td>

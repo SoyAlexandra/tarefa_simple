@@ -4,6 +4,7 @@ class Admin::QuestionsController < ApplicationController
   # GET /admin/questions
   # GET /admin/questions.json
   def index
+    
     @admin_questions = Question.all
   end
 
