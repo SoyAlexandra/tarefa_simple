@@ -7,7 +7,7 @@
     <meta name="description" content="Encuentra respuestas confiables a tus ejercicios de matemáticas hechos por profesionales validados por Tarefa">
     <meta name="author" content="">
 
-    <title><%= content_for?(:title) ? yield(:title) : "Tarefa Simple" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Tarefa" %></title>
     <%= stylesheet_link_tag    "application" %>
 
 
@@ -48,9 +48,8 @@
             </li>
 
             <li>
-
+                 <%= link_to 'Como Funciona', static_pages_how_to_work_path%>
          
-              <a href="static_pages/how_to_work">Como Funciona</a>
             </li>
 
             <li class= "divider"></li>
