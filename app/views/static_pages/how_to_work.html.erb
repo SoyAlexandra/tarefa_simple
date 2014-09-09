@@ -76,7 +76,8 @@
 					<div class="row">
 						<div class="col-md-12">
 							<p class="lead">
-								Encuentra respuestas confiables a tus ejercicios de matemáticas hechos por profesionales validados por Tarefa
+								Encuentra respuestas confiables a tus ejercicios de matemáticas hechos por profesionales validados por Tarefa, paga tus paquetes de preguntas con el método
+								pago en línea más seguro de América Latina, confiable, seguro y fácil.
 							</p>
 						</div>
 					</div>
@@ -91,7 +92,15 @@
 							<div class="col-md-3">
 								<div class="plan">
 									<h3><span>FREE</span></h3>
-									<a class="btn btn-lg btn-primary" href="#">Registrese</a>
+
+									<% if current_user %>
+                   				 <%=  link_to 'Probar' , new_user_registration_path, class:"btn btn-lg btn-primary" %>
+                  <% else %>
+                    <%= link_to 'probar',new_user_registration_path,class:"btn btn-lg btn-primary"  %>
+                  <% end %>
+
+
+									  
 									<ul>
 										<li><b>3</b> Preguntas</li>
 										<li> Vigencia un mes </li>
@@ -106,7 +115,22 @@
 								<div class="plan most-popular">
 									<div class="plan-ribbon-wrapper"><div class="plan-ribbon">Popular</div></div>
 									<h3>300 Preguntas<span>$80</span></h3>
-									<a class="btn btn-lg btn-primary" href="#">Registrese</a>
+									<form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul">
+  <input type="image" border="0" alt="" src="http://www.payulatam.com/img_botones_herramientas/boton_pagar_mediano.png" onClick="this.form.urlOrigen.value = window.location.href;"/>
+  <input name="merchantId" type="hidden" value="506207"/>
+  <input name="accountId" type="hidden" value="507201"/>
+  <input name="description" type="hidden" value="Plan 1"/>
+  <input name="referenceCode" type="hidden" value="1"/>
+  <input name="amount" type="hidden" value="150000"/>
+  <input name="tax" type="hidden" value="0"/>
+  <input name="taxReturnBase" type="hidden" value="0"/>
+<input name="shipmentValue" value="0" type="hidden"/>
+  <input name="currency" type="hidden" value="COP"/>
+  <input name="lng" type="hidden" value="es"/>
+  <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
+  <input name="buttonType" value="SIMPLE" type="hidden"/>
+  <input name="signature" value="1cfbb1b7e753acc6af8ee5c61b47ba26d2786a8f952026d76529172ee5ae98ad" type="hidden"/>
+</form>
 									<ul>
 										<li><b>300</b> Preguntas</li>
 										<li> Acceso 7/24</li>
@@ -119,7 +143,22 @@
 							<div class="col-md-3">
 								<div class="plan">
 									<h3>120 Preguntas<span>$30</span></h3>
-									<a class="btn btn-lg btn-primary" href="#">Registrese</a>
+									<form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul">
+  <input type="image" border="0" alt="" src="http://www.payulatam.com/img_botones_herramientas/boton_pagar_mediano.png" onClick="this.form.urlOrigen.value = window.location.href;"/>
+  <input name="merchantId" type="hidden" value="506207"/>
+  <input name="accountId" type="hidden" value="507201"/>
+  <input name="description" type="hidden" value="Plan 2"/>
+  <input name="referenceCode" type="hidden" value="2"/>
+  <input name="amount" type="hidden" value="60000"/>
+  <input name="tax" type="hidden" value="0"/>
+  <input name="taxReturnBase" type="hidden" value="0"/>
+<input name="shipmentValue" value="0" type="hidden"/>
+  <input name="currency" type="hidden" value="COP"/>
+  <input name="lng" type="hidden" value="es"/>
+  <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
+  <input name="buttonType" value="SIMPLE" type="hidden"/>
+  <input name="signature" value="874c333af8eb29003a8135b5fc285834373ba32d1d1ed2795a5500040e0518b7" type="hidden"/>
+</form>
 									<ul>
 										<li><b>120</b> Preguntas</li>
 										<li> Acceso 7/24</li>
@@ -135,7 +174,22 @@
 							<div class="col-md-3">
 								<div class="plan">
 									<h3>900 Preguntas<span>$160</span></h3>
-									<a class="btn btn-lg btn-primary" href="#">Registrese</a>
+									<form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul">
+  <input type="image" border="0" alt="" src="http://www.payulatam.com/img_botones_herramientas/boton_pagar_mediano.png" onClick="this.form.urlOrigen.value = window.location.href;"/>
+  <input name="merchantId" type="hidden" value="506207"/>
+  <input name="accountId" type="hidden" value="507201"/>
+  <input name="description" type="hidden" value="Plan 3"/>
+  <input name="referenceCode" type="hidden" value="3"/>
+  <input name="amount" type="hidden" value="300000"/>
+  <input name="tax" type="hidden" value="0"/>
+  <input name="taxReturnBase" type="hidden" value="0"/>
+<input name="shipmentValue" value="0" type="hidden"/>
+  <input name="currency" type="hidden" value="COP"/>
+  <input name="lng" type="hidden" value="es"/>
+  <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
+  <input name="buttonType" value="SIMPLE" type="hidden"/>
+  <input name="signature" value="f203d4aca6986b008e4f8e955ec07a354bd73942dde551eefbe804b0baa42822" type="hidden"/>
+</form>
 									<ul>
 										<li><b>900</b> Preguntas</li>
 										<li> Acceso 7/24</li>
