@@ -8,6 +8,8 @@ Micropost::Application.routes.draw do
 
   get "static_pages/how_to_work"
   get "static_pages/faq"
+    post "admin/questions"
+
   devise_for :users
   resources :posts
 
