@@ -583,13 +583,15 @@ border-top: 1px solid #e6e6e6;
 #hero .form-search .btn {
    padding: 21px 50px;
    font-size: 18px;
-   background-color: #222;
+   border-color:#ff5a5f;
+   border-bottom-color:#e00007;
+   background-color: #ff5a5f;
    margin-left: 8px;
    color: #fff;
    font-weight: 500;
 }
 #hero .form-search .btn:hover {
-   background-color: #000;
+   background-color: #FA6B70;
 }
 
 #boxes {
