@@ -12,7 +12,7 @@
           <div class="hero-box col-sm-8 col-sm-offset-2">
             <%= form_for(@question, role: "search", html: {class: "form-search", id:"searchform"}) do |f| %>
               <div class="input-group">
-                <%= f.text_field :content, class: "form-control input-lg", id: "autocomplete-dynamic", placeholder: "Encuentra ayuda! Escribe tu pregunta aquí." %>
+                <%= f.text_field :content, class: "form-control input-lg", id: "autocomplete-dynamic", placeholder: "Escribe tu pregunta, ejemplo: ¿ Cuánto es 2+2 ?" %>
                 <span class="input-group-btn">
                   <% if current_user %>
                     <%= f.submit "Preguntar", :class => "btn" %>
